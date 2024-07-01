@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Notas ADSO</title>
+   <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Calculadora de Notas ADSO</h1>
+    <form>  
+        <div class="form-row">       
+    <div class="col-md-3">
+        <label for="identidad"> Documento de Identidad:</label>
+         <input type="text" id="identidad" class="form-control" title="Ingrese su número de documento">
+    </div>
+         <div class="form-group col-md-3">
+            <label for="nombres">Nombre:</label>
+            <input type="text" id="nombre" class="form-control" title="Ingrese su nombre completo">
+        </div>
+        <div class="form-row">
+        <div class="col-md-12">
+        <h6>Ingrese notas de evidencias de producto</H6>
+        </div>
+       
+        <div class="col-md-3">
+            <label for="notaProducto1">Nota Producto 1:</label>
+            <input type="text" id="notaProducto1" class="form-control" title="Ingrese la nota número 1">
+        </div>
+        <div class="form-group col-md-3">
+            <label for="notaProducto2">Nota Producto 2:</label>
+            <input type="number" id="notaProducto2" name="notaProducto2" required class="form-control">
+        </div>
+       <div class="form-group col-md-3"> 
+        <label for="notaProducto3">Nota Producto 3:</label>
+        <input type="number" id="notaProducto3" name="notaProducto3" required class="form-control">
+        </div>
+        <div class="col-md-12">
+<h6>Ingrese notas de evidencias de desempeño</H6>
+        </div>
+    <div class="form-group col-md-3">
+        <label for="notaDesempeno1">Nota Desempeño 1:</label>
+        <input type="number" id="notaDesempeno1" name="notaDesempeno1" required class="form-control">
+    </div>
+        <div class="form-group col-md-3">
+        <label for="notaDesempeno2">Nota Desempeño 2:</label>
+        <input type="number" id="notaDesempeno2" name="notaDesempeno2" required class="form-control">
+    </div>
+</div>
+<div class="col-md-12">
+<h6>Ingrese nota de evidencias de Conocimiento</H6>
+</div>
+    <div class="form-group col-md-3">
+        <label for="notaConocimiento">Nota Conocimiento:</label>
+        <input type="number" id="notaConocimiento" name="notaConocimiento" required class="form-control">
+    </div>
+</div>
+        <button type="button" class="btn btn-primary" onclick="calcularNota()">Calcular</button>
+        <button type="button" class="btn btn-danger" onclick="limpiarFormulario()">Limpiar</button>
+    </form>
+
+    <h2 id="resultado"></h2>
+
+</body>
+
+</html>
